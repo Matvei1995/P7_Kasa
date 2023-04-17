@@ -1,0 +1,59 @@
+@import '../configstyles/variables';
+
+.lodgin_container {
+  background-color: $secondary-color;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  max-width: 1240px;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 0;
+    background-color: white;
+  }
+  &_card__layer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+}
+
+.card {
+  position: relative;
+  @media (max-width: 768px) {
+    width:  450px;
+ 
+  }
+
+  &__pictures {
+    width: 340px;
+    height: 340px;
+    border-radius: 15px;
+    object-fit: cover;
+    background: linear-gradient(to top, $secondary-color, #8c2b2f);
+    filter: to-lower-case($string: '') brightness(0.7);
+    transition: transform 1s;
+    @media (max-width: 768px) {
+        width:  450px;
+        
+    }
+    &:hover {
+      box-shadow: 0 0 20px #ff6060;
+    }
+  }
+
+  &__title-container {
+    font-size: 18px;
+    position: absolute;
+    color: #ffff;
+    bottom: 30px;
+    left: 10px;
+    width: 300px;
+  }
+}

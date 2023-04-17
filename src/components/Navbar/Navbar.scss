@@ -1,0 +1,37 @@
+$color-primary: #ff6060;
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  margin-top: 3%;
+  color: $color-primary;
+  max-width: 1240px;
+  height: 68px;
+
+  @media (max-width: 768px) {
+    text-transform: uppercase;
+  }
+
+  &_to-home_to-about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &_to-home {
+    padding-right: 55px;
+  }
+
+  &_to-about,
+  &_to-home {
+    text-decoration-line: none;
+
+    color: $color-primary;
+
+    &:hover,
+    &:focus {
+      text-decoration-line: underline;
+    }
+  }
+}

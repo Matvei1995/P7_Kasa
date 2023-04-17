@@ -1,0 +1,19 @@
+@import '../../configstyles/Variables';
+
+.Error-page {
+  color: $primary-color;
+  text-align: center;
+  h1 {
+    font-size: 10rem;
+    margin: 60px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 130px;
+  }
+  a {
+   
+    color: $primary-color;
+  }
+}

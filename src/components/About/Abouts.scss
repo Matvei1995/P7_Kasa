@@ -1,0 +1,72 @@
+@import '../../configstyles/Variables.scss';
+.About__container{
+  margin: 5%;
+}
+.container-img {
+  margin-left: 5%;
+  height: 223px;
+  max-width: 1240px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+ 
+  
+}
+.img{
+   
+  width: 100%;
+  background-size: cover;
+}
+
+.cards {
+  padding: 50px;
+  &__title-container {
+    //description__header
+
+    cursor: pointer;
+    margin-top: 18px;
+    margin-left: 12%;
+    padding: 16px;
+    max-width: 1023px;
+    color: $tertiary-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+  }
+  &__title-container:checked {
+    transform: translateY(-100%);
+  }
+
+  &__value {
+    //description__content
+
+    background-color: $secondary-color;
+    margin-left: 12%;
+    border-radius: 5px;
+    color: $primary-color;
+    padding: 16px;
+    max-width: 1023px;
+    //transform: translateY(-100%);
+  }
+}
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+.chevron.bottom:before {
+  transform: rotate(135deg);
+}
+.chevron.bottom:after {
+  transform: rotate(-45deg);
+}

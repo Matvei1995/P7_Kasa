@@ -1,0 +1,33 @@
+@import '../../configstyles/Variables';
+
+.lodging-page {
+ 
+  color: $primary-color;
+  max-width: 1240px;
+  &__picture {
+    height: 223px;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+
+
+
+.lodging__description__area{
+  display: flex;
+  gap: 60px;
+  margin: 5%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+
+

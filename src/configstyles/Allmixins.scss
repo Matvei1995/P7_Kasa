@@ -1,0 +1,10 @@
+//Ombre
+@mixin shadow_Box {
+    box-shadow: #ff6060 0 0 22px 6px;
+}
+
+//100% of height and width
+@mixin full_Of_W_H{
+    width: 100%;
+    height: 100%;
+}

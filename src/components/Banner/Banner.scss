@@ -1,0 +1,50 @@
+@import '../../styles/index.scss';
+.banner {
+  margin: 5%;
+  height: 223px;
+  max-width: 1240px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+
+  &_img {
+   
+    
+    
+    @media (max-width: 768px) {
+      background-size: cover;
+      height: 111px;
+      
+    }
+  }
+
+  &_opacity {
+    
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .title {
+      color: white;
+      font-size: x-large;
+      height: 68px;
+      line-height: 68px;
+    }
+  }
+}
