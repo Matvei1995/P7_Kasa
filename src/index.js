@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import './configstyles/ImportStyles.scss';
+
 
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import About from './components/About/Abouts';
-import LodgingPages from './components/LodgingPages/LodgingPages';
-import ErrorPage from './components/ErrorPage/ErrorPage';
+import About from './Pages/About/Abouts';
+import LodgingPages from './Pages/LodgingPages/LodgingPages';
+import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 
 const Layout = () => {
   return (

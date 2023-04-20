@@ -1,0 +1,19 @@
+@import '../../configStyles/Variables.scss';
+.lodging__grid {
+  background-color: $secondary-color;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    background-color: white;
+ 
+  }
+}

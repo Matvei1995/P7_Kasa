@@ -1,11 +1,9 @@
-@import '../configstyles/Variables.scss';
+@import '../../configstyles/Variables.scss';
 
 .lodging__header {
   display: flex;
-  margin:5%;
-
+ 
   margin-bottom: 20px;
-
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -17,7 +15,7 @@
 }
 .lodging-page__title {
   font-weight: 500;
-  margin-bottom: 7px;
+ 
 }
 .lodging-page-subtitle {
   font-size: 16px;
@@ -25,12 +23,22 @@
   margin-block: 20px;
 }
 
+
 .lodging__tags {
   display: grid;
-  margin-bottom: 20px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 18px;
+  align-items: center;
 }
+.lodging__tag {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  padding: 6px 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
 .lodging__owner {
   display: flex;
   flex-direction: column;
@@ -41,18 +49,16 @@
     margin-left: 0;
   }
 }
-.lodging__tag {
-  background-color: $primary-color;
-  color: $tertiary-color;
-  padding: 6px 10px;
-  border-radius: 12px;
-  text-align: center;
-}
+
 .lodging__owner__details {
   display: flex;
   gap: 8px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  
   @media (max-width: 768px) {
     order: 1;
+    padding-right: 10px;
   }
 }
 .lodging__owner__name {
@@ -62,20 +68,21 @@
   margin-block: 0;
   font-weight: 400;
 }
-.lodging__owner__badge {
+.lodging__owner__badge img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: $secondary-color;
 }
 .lodging__owner__stars {
-  display: flex;
-  .on {
+ 
+  .on span{
+    font-size: 32px;
     color: $primary-color;
-    padding: 3px;
+   
   }
-  .off {
-    color: $secondary-color;
-    padding: 3px;
-  }
+
+}
+.position__stars{
+  margin: 3px;
 }

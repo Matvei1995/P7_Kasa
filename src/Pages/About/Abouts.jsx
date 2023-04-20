@@ -1,21 +1,30 @@
 import React from 'react';
 
 import './Abouts.scss';
-
-//import aboutDataArray from '../../datas/About.json';
-//import imgAbout from '../assets/background_about.png';
-import AboutBanner from '../ImagesBanner';
-import AboutDescription from '../PanelDescription';
+import AboutBanner from '../../components/ImagesBanner/ImagesBanner';
+import AboutDescription from '../../components/PanelDescription/PanelDescription';
 
 function About() {
   return (
     <>
       <AboutBanner />
       <div className="About__container">
-        <AboutDescription />
-        <AboutDescription />
-        <AboutDescription />
-        <AboutDescription />
+        <AboutDescription
+          title="Fiabilité"
+          content="loremsqjdbjksfhjqkshfjdshqfjqhkjfhbdjkf"
+        />
+        <AboutDescription
+          title="Respect"
+          content="loremsqjdbjksfhjqkshfjdshqfjqhkjfhbdjkf"
+        />
+        <AboutDescription
+          title="Service"
+          content="loremsqjdbjksfhjqkshfjdshqfjqhkjfhbdjkf"
+        />
+        <AboutDescription
+          title="Responsabilité"
+          content="loremsqjdbjksfhjqkshfjdshqfjqhkjfhbdjkf"
+        />
       </div>
     </>
   );

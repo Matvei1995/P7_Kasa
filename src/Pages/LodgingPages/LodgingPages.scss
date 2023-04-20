@@ -1,8 +1,9 @@
 @import '../../configstyles/Variables';
 
 .lodging-page {
- 
+ margin: 40px;
   color: $primary-color;
+  width: 100%;
   max-width: 1240px;
   &__picture {
     height: 223px;
@@ -13,21 +14,23 @@
     width: 100%;
     background-size: cover;
   }
-}
-
-
-
-
-.lodging__description__area{
-  display: flex;
-  gap: 60px;
-  margin: 5%;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 20px;
+  .lodging__description__area{
+    display: flex;
+    gap: 60px;
+ 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+   
+  
   }
-
 }
+
+
+
+
+
 
 
 

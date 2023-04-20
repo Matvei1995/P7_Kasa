@@ -1,25 +1,21 @@
 @import '../../styles/index.scss';
 .banner {
-  margin: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 223px;
-  max-width: 1240px;
+  width: 1240px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
 
   &_img {
-   
-    
-    
     @media (max-width: 768px) {
       background-size: cover;
       height: 111px;
-      
     }
   }
 
   &_opacity {
-    
     background: black;
     position: absolute;
     top: 0;
