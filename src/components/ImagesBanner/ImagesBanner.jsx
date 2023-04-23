@@ -24,23 +24,26 @@ function ImagesBanner(props) {
     }
     setCurrentPicture(currentPicture - 1);
   };
+
+  const carouselDefault = picturesArray.map((pic, i) => (
+    <img
+      className={getClassName(i)}
+      key={pic}
+      src={pic}
+      alt="carrousel images"
+    ></img>
+  ));
+
   return (
     <div className="Banner">
       <div className="image__container">
+        {carouselDefault}
         <div className="button btn-right" onClick={moveToNext}>
           <i class="fas fa-regular fa-chevron-right"></i>
         </div>
         <div className="button btn-left" onClick={moveToPrevious}>
           <i class="fas fas-regular fas-chevron-left"></i>
         </div>
-        {picturesArray.map((pic, i) => (
-          <img
-            className={getClassName(i)}
-            key={pic}
-            src={pic}
-            alt="carrousel images"
-          ></img>
-        ))}
       </div>
     </div>
   );

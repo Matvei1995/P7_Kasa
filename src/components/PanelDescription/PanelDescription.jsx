@@ -12,7 +12,9 @@ function PanelDescription(props) {
     <div className="panel__description">
       <p className="description__header">
         <span>{props.title}</span>
-        <i className="fas fa-chevron-up" onClick={showContentIsVisible}></i>
+        <div id="chevron" className="chevron-container">
+          <i className="fas fa-chevron-up" onClick={showContentIsVisible}></i>
+        </div>
       </p>
 
       {isContentVisible && (

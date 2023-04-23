@@ -6,7 +6,9 @@ function Navbar() {
   return (
     <header className="nav-header">
       <div className="navbar__logo">
-        <img src={logo} alt="Voici le logo de l'entreprise" />
+        <NavLink to="/">
+          <img src={logo} alt="Voici le logo de l'entreprise" />
+        </NavLink>
       </div>
       <div className="nav-header_to-home_to-about">
         <NavLink to="/" className="nav-header_to-home">

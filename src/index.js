@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
-
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -14,8 +13,10 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <main>
+        <Navbar />
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

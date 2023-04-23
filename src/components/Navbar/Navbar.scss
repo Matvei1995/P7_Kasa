@@ -4,11 +4,8 @@ $color-primary: #ff6060;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
   color: $color-primary;
-  width: 100%;
-  max-width: 1240px;
-  height: 68px;
+  
 
   @media (max-width: 768px) {
     text-transform: uppercase;

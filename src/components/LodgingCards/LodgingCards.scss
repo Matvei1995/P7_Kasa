@@ -1,6 +1,9 @@
 @import '../../configstyles/variables';
 
 .lodgin_container {
+  &:hover {
+    box-shadow: #ff6060 0 0 20px ;
+  }
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -28,12 +31,8 @@
   position: relative;
   max-width: 340px;
   max-height: 340px;
-  @media (max-width: 768px) {
-    width: 100%;
-    max-width: 335px;
-    height: 100%;
-    max-height: 255px;
-  }
+
+
 
   &__pictures {
     width: 100%;
@@ -41,10 +40,14 @@
     border-radius: 15px;
     object-fit: cover;
     color: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
-
-    &:hover {
-      box-shadow: 0 0 20px #ff6060;
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 335px;
+      height: 100%;
+      max-height: 255px;
     }
+  
+   
   }
 
   &__title-container {
@@ -53,5 +56,6 @@
     color: #ffff;
     bottom: 30px;
     left: 10px;
+    
   }
 }
