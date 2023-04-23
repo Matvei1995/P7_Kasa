@@ -13,14 +13,16 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 const Layout = () => {
   return (
     <>
-      <main>
-        <Navbar />
-        <Outlet />
-      </main>
+      <Navbar />
+      <Outlet />
       <Footer />
     </>
   );
 };
+
+
+
+
 const router = createBrowserRouter([
   {
     element: <Layout />,

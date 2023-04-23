@@ -30,27 +30,30 @@ function LodgingPages() {
 
   return (
     <>
-      <LodgingBanner picturesArray={selectionLodg.pictures} />
-      <article className="lodging-page">
-        <LodgingHeader selectionLodg={selectionLodg} />
-        <div className="lodging__description__area">
-          <LodgingDescription
-            title="Description"
-            content={selectionLodg.description}
-          />
-          <LodgingDescription
-            title="Équipements"
-            content={selectionLodg.equipments.map((equip, i) => (
-              <>
-                <ul>
-                  <li key={i}>{equip}</li>
-                </ul>
-              </>
-            ))}
-          />
-        </div>
-      </article>
+      <div className="LodgMain">
+        <LodgingBanner picturesArray={selectionLodg.pictures} />
+        <article className="lodging-page">
+          <LodgingHeader selectionLodg={selectionLodg} />
+          <div className="lodging__description__area">
+            <LodgingDescription
+              title="Description"
+              content={selectionLodg.description}
+            />
+            <LodgingDescription
+              title="Équipements"
+              content={selectionLodg.equipments.map((equip, i) => (
+                <>
+                  <ul>
+                    <li key={i}>{equip}</li>
+                  </ul>
+                </>
+              ))}
+            />
+          </div>
+        </article>
+      </div>
     </>
   );
 }
+
 export default LodgingPages;

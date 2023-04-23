@@ -39,10 +39,13 @@ function ImagesBanner(props) {
       <div className="image__container">
         {carouselDefault}
         <div className="button btn-right" onClick={moveToNext}>
-          <i class="fas fa-regular fa-chevron-right"></i>
+          <i className="fas fa-regular fa-chevron-right"></i>
+        </div>
+        <div className="slide-counter">
+          {currentPicture + 1} / {picturesArray.length}
         </div>
         <div className="button btn-left" onClick={moveToPrevious}>
-          <i class="fas fas-regular fas-chevron-left"></i>
+          <i className="fas fas-regular fas-chevron-left"></i>
         </div>
       </div>
     </div>

@@ -34,8 +34,8 @@ function LodgingHeader(props) {
         </div>
 
         <div className="lodging__owner__stars">
-          {[1, 2, 3, 4, 5].map((num) => (
-            <span key={num} className={SelectionLodg >= num ? 'on' : ''}>
+          {[1, 2, 3, 4, 5].map((num, i) => (
+            <span key={i} className={SelectionLodg >= num ? 'on' : ''}>
               <img
                 className="position__stars"
                 src={stars}

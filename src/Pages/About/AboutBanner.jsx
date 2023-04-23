@@ -3,7 +3,7 @@ import './AboutsBanner.scss';
 function AboutBanner() {
   return (
     <div className="AboutBanner">
-      <div className="boutBanner_img">
+      <div className="AboutBanner_img">
         <img src={BannerAbout} alt="Bannière de A propos" />
       </div>
       <div className="AboutBanner_opacity"></div>

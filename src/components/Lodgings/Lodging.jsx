@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import LodgingCards from '../LodgingCards/LodgingCards';
 import './Lodging.scss';
 
-function Lodging(props) {
+function Lodging() {
   const [lodgings, setLodgings] = useState([]);
   useEffect(fetchLodgings, []);
 
@@ -19,6 +19,7 @@ function Lodging(props) {
       {lodgings.map((lodging) => (
         <>
           <LodgingCards
+            key="lodging.id"
             id={lodging.id}
             title={lodging.title}
             imageUrl={lodging.cover}

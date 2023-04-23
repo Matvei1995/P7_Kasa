@@ -1,5 +1,8 @@
 @import '../../configstyles/Variables';
-
+.LodgMain{
+  padding-top: unset;
+ 
+}
 .lodging-page {
  margin-top: 40px;
   color: $primary-color;
@@ -22,8 +25,10 @@
       gap: 20px;
     }
    
-  
   }
+}
+ul{
+  list-style-type: none;
 }
 
 
