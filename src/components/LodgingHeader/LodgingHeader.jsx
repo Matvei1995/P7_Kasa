@@ -1,11 +1,10 @@
 import React from 'react';
 import './LodgingHeader.scss';
-import stars from '../assets/stars.svg';
 
 function LodgingHeader(props) {
   const SelectionLodg = props.selectionLodg;
 
-  const name = SelectionLodg.host.name;
+  const name = props.selectionLodg.host.name;
 
   const [firstName, lastName] = name.split(' ');
 
@@ -35,12 +34,11 @@ function LodgingHeader(props) {
 
         <div className="lodging__owner__stars">
           {[1, 2, 3, 4, 5].map((num, i) => (
-            <span key={i} className={SelectionLodg >= num ? 'on' : ''}>
-              <img
-                className="position__stars"
-                src={stars}
-                alt="Des étoiles"
-              ></img>
+            <span
+              key={i}
+              className={SelectionLodg.rating >= num ? 'on' : 'off'}
+            >
+              ★
             </span>
           ))}
         </div>

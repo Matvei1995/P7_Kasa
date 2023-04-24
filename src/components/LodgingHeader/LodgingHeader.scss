@@ -47,6 +47,7 @@
     justify-content: space-between;
     flex-direction: row;
     margin-left: 0;
+    padding-top: 30px;
   }
 }
 
@@ -75,14 +76,21 @@
   background-color: $secondary-color;
 }
 .lodging__owner__stars {
- 
-  .on span{
-    font-size: 32px;
+  font-size: 30px;
+  
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  .on {
+    margin: 5px;
+  
+    
     color: $primary-color;
    
   }
-
+.off {
+  color: $secondary-color;
+  margin: 5px;
+  
 }
-.position__stars{
-  margin: 3px;
 }

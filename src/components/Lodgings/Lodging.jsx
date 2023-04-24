@@ -19,7 +19,6 @@ function Lodging() {
       {lodgings.map((lodging, index) => (
         <>
           <LodgingCards
-            key={index}
             id={lodging.id}
             title={lodging.title}
             imageUrl={lodging.cover}

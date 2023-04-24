@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 
 function LodgingCards(props) {
   const idLodg = props.id;
+
   return (
     <Link
       to={'/Lodging' + '/' + idLodg}
       state={{
-        Id: idLodg,
+        id: idLodg,
       }}
     >
       <article className="lodgin_container">
         <div className="lodgin_container_card__layer">
-          <div id={props.id}></div>
           <div className="card">
             <img
               className="card__pictures"
