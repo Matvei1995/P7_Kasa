@@ -16,11 +16,11 @@ function LodgingPages() {
   useEffect(fetchDataLodgings, []);
 
   function fetchDataLodgings() {
-    fetch('listLodgings.json')
+    fetch('/listLodgings.json')
       .then((response) => response.json())
       .then((lodgs) => {
         const selectionLodg = lodgs.find(
-          (lodg) => lodg.id === location.state.lodgingId
+          (lodg) => lodg.id === location.state.Id
         );
         setSelectionLodg(selectionLodg);
       })

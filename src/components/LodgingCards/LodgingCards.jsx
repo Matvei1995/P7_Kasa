@@ -4,11 +4,12 @@ import './LodgingCards.scss';
 import { Link } from 'react-router-dom';
 
 function LodgingCards(props) {
+  const idLodg = props.id;
   return (
     <Link
-      to="/Lodging"
+      to={'/Lodging' + '/' + idLodg}
       state={{
-        lodgingId: props.id,
+        Id: idLodg,
       }}
     >
       <article className="lodgin_container">
@@ -18,7 +19,7 @@ function LodgingCards(props) {
             <img
               className="card__pictures"
               src={props.imageUrl}
-              alt={'Image de couverture'}
+              alt="couverture"
             />
 
             <div className="card__title-container">

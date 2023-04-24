@@ -10,6 +10,7 @@ import About from './Pages/About/Abouts';
 import LodgingPages from './Pages/LodgingPages/LodgingPages';
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 
+
 const Layout = () => {
   return (
     <>
@@ -19,8 +20,6 @@ const Layout = () => {
     </>
   );
 };
-
-
 
 
 const router = createBrowserRouter([
@@ -37,13 +36,13 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: '/Lodging',
+        path: '/Lodging/:id',
         element: <LodgingPages />,
       },
     ],
   },
 ]);
-
+//+ "/"+ idLodg 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

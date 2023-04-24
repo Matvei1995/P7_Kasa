@@ -29,7 +29,7 @@ function LodgingHeader(props) {
             <span>{lastName}</span>
           </h3>
           <div className="lodging__owner__badge">
-            <img src={SelectionLodg.host.picture} alt="Photo de profil "></img>
+            <img src={SelectionLodg.host.picture} alt="profil "></img>
           </div>
         </div>
 

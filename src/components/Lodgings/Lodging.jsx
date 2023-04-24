@@ -8,7 +8,7 @@ function Lodging() {
   useEffect(fetchLodgings, []);
 
   function fetchLodgings() {
-    fetch('listLodgings.json')
+    fetch('/listLodgings.json')
       .then((response) => response.json())
       .then((response) => setLodgings(response))
       .catch(console.error);
@@ -16,10 +16,10 @@ function Lodging() {
 
   return (
     <div className="lodging__grid">
-      {lodgings.map((lodging) => (
+      {lodgings.map((lodging, index) => (
         <>
           <LodgingCards
-            key="lodging.id"
+            key={index}
             id={lodging.id}
             title={lodging.title}
             imageUrl={lodging.cover}
