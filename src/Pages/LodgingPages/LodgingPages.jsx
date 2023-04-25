@@ -43,10 +43,10 @@ function LodgingPages() {
             />
             <LodgingDescription
               title="Équipements"
-              content={selectionLodg.equipments.map((equip, i) => (
+              content={selectionLodg.equipments.map((equip, el) => (
                 <>
                   <ul>
-                    <li key={i}>{equip}</li>
+                    <li key={equip}>{el}</li>
                   </ul>
                 </>
               ))}

@@ -16,15 +16,16 @@ function Lodging() {
 
   return (
     <div className="lodging__grid">
-      {lodgings.map((lodging, index) => (
-        <>
+      <>
+        {lodgings.map((lodging) => (
           <LodgingCards
+            key={lodging.id}
             id={lodging.id}
             title={lodging.title}
             imageUrl={lodging.cover}
           />
-        </>
-      ))}
+        ))}
+      </>
     </div>
   );
 }

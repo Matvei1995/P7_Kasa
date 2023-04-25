@@ -33,9 +33,9 @@ function LodgingHeader(props) {
         </div>
 
         <div className="lodging__owner__stars">
-          {[1, 2, 3, 4, 5].map((num, i) => (
+          {[1, 2, 3, 4, 5].map((num) => (
             <span
-              key={i}
+              key={num}
               className={SelectionLodg.rating >= num ? 'on' : 'off'}
             >
               ★
