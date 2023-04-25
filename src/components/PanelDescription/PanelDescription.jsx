@@ -4,10 +4,6 @@ import './PanelDescription.scss';
 function PanelDescription(props) {
   const [isContentVisible, setIsContentVisible] = useState(false);
 
-  const [rotation, setRotation] = useState(false);
-  const handleClick = () => {
-    setRotation(!rotation);
-  };
   const showContentIsVisible = () => {
     setIsContentVisible(!isContentVisible);
   };
@@ -17,14 +13,9 @@ function PanelDescription(props) {
       <div className="description__header">
         <span>{props.title}</span>
         <div>
-          <div
-            className={`fas fa- ${rotation ? 'chevron-up' : 'chevron-down'}`}
-          />
-          <i
-            className="fas fa-chevron-up"
-            onClick={showContentIsVisible}
-            Click={handleClick}
-          ></i>
+          <div />
+
+          <i className="fas fa-chevron-up" onClick={showContentIsVisible}></i>
         </div>
       </div>
 
