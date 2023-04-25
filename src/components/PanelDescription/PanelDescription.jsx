@@ -13,9 +13,12 @@ function PanelDescription(props) {
       <div className="description__header">
         <span>{props.title}</span>
         <div>
-          <div />
-
-          <i className="fas fa-chevron-up" onClick={showContentIsVisible}></i>
+          <div
+            onClick={showContentIsVisible}
+            className={`fas fa-chevron-up rotate ${
+              isContentVisible ? 'down' : ''
+            }`}
+          ></div>
         </div>
       </div>
 
