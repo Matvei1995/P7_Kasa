@@ -7,12 +7,12 @@ function LodgingCards(props) {
   const idLodg = props.id;
 
   return (
-    <Link
-      to={'/Lodging' + '/' + idLodg}
-      state={{
-        id: idLodg,
-      }}
-    >
+     <Link
+       to={'/Lodging' + '/' + idLodg}
+       state={{
+         id: idLodg,
+       }}
+     >
       <article className="lodgin_container">
         <div className="lodgin_container_card__layer">
           <div className="card">

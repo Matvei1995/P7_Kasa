@@ -11,35 +11,38 @@ import LodgingPages from './Pages/LodgingPages/LodgingPages';
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 
 
-const Layout = () => {
+function Layout(){
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer  />
+      <Navbar/>
+      <Outlet/>
+      <Footer/>
     </>
   );
 };
 
 
 const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: '/',
-        element: <Home />,
-      },
-      {
-        path: '/About',
-        element: <About />,
-      },
-      {
-        path: '/Lodging/:id',
-        element: <LodgingPages />,
-      },
-    ],
+  
+  { element: <Layout />,
+  errorElement: <ErrorPage />,
+  
+  children: [
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/About',
+      element: <About />,
+    },
+    {
+      path: '/Lodging/:id',
+      element: <LodgingPages />,
+    },
+  ],
+   
+    
   },
 ]);
 
