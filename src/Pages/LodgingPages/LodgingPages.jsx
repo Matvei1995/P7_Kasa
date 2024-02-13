@@ -14,18 +14,22 @@ function LodgingPages() {
   const [selectionLodg, setSelectionLodg] = useState(null);
 
   useEffect(() => {
-    async function init() {
-      const id = location.pathname.replace('/Lodging/', '');
+   
+     function init() {
+       const id = location.pathname.replace('/Lodging/', '');
 
-      fetch('/listLodgings.json')
-        .then((response) => response.json())
-        .then((lodgs) => {
-          const selectionLodg = lodgs.find((lodg) => lodg.id === id);
-          setSelectionLodg(selectionLodg);
-        })
-        .catch(console.error);
-    }
-    init();
+       fetch('/listLodgings.json')
+         .then((response) => response.json())
+         .then((lodgs) => {
+           const selectionLodg = lodgs.find((lodg) => lodg.id === id);
+           setSelectionLodg(selectionLodg);
+         })
+         .catch((error)=>{
+          console.log(error);
+        });
+     }
+    
+     init();
   }, []);
 
   if (selectionLodg === null) return <div>Chargement...</div>;

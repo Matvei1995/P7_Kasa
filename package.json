@@ -1,5 +1,4 @@
 {
-  "homepage": "https://matvei1995.github.io/P7_Kasa/",
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
@@ -16,11 +15,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -35,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
+  
     "json-loader": "^0.5.7"
   }
 }

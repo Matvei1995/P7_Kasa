@@ -2,21 +2,29 @@ import React, { useEffect, useState } from 'react';
 
 import LodgingCards from '../LodgingCards/LodgingCards';
 import './Lodging.scss';
-
+import logements from "../listLodgings.json";
 function Lodging() {
   const [lodgings, setLodgings] = useState([]);
+
   useEffect(fetchLodgings, []);
-
-  function fetchLodgings() {
+ function fetchLodgings() {
     fetch('/listLodgings.json')
-      .then((response) => response.json())
+      .then((response) =>{ 
+          console.log(response);
+        response.json();
+      })
       .then((response) => setLodgings(response))
-      .catch(console.error);
+      .catch((error)=>{
+        console.log(error);
+      });
+    
   }
-
+  
+ 
   return (
+    
     <div className="lodging__grid">
-      <>
+    
         {lodgings.map((lodging) => (
           <LodgingCards
             key={lodging.id}
@@ -25,7 +33,7 @@ function Lodging() {
             imageUrl={lodging.cover}
           />
         ))}
-      </>
+      
     </div>
   );
 }
