@@ -24,6 +24,12 @@
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
+
+      .LodgMain{
+      padding-top: unset;
+      padding-left: 3vh;
+      padding-right: 3vh;
+}
     }
    
   }
